@@ -83,22 +83,23 @@
 
     /* ===== HERO ===== */
     .hero {
-      height: 100vh;
+      min-height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 0 20px;
     }
 
     .hero img {
-      width: 160px;
-      height: 160px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #00e0ff99;
       box-shadow: 0 0 25px #00e0ff66;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       animation: fadeIn 2s ease;
     }
 
@@ -134,13 +135,12 @@
       box-shadow: 0 0 25px #00e0ff, 0 0 40px #00aaff;
     }
 
-    /* ===== SECCIONES ===== */
     section {
-      padding: 100px 20px 60px;
+      padding: 90px 20px 60px;
       max-width: 1000px;
       margin: auto;
       text-align: center;
-      scroll-margin-top: 100px;
+      scroll-margin-top: 90px;
     }
 
     h2 {
@@ -168,7 +168,7 @@
       width: 100%;
       height: 180px;
       object-fit: cover;
-      filter: brightness(0.8);
+      filter: brightness(0.85);
       transition: filter 0.4s ease;
     }
 
@@ -209,53 +209,47 @@
     <a href="#contacto" class="boton">Contactanos</a>
   </section>
 
-  <section class="oferta">
-    <h2>Tu primera web profesional a bajo costo</h2>
-    <p>Ideal para emprendedores, técnicos o pequeños negocios.<br>
-    Contactá a <strong>KronAR Studio</strong> — Tecnología que optimiza el tiempo.</p>
-  </section>
-
   <section id="servicios">
     <h2>Qué hacemos</h2>
-    <p>Desarrollamos herramientas digitales que eliminan lo innecesario y mejoran lo que ya existe.</p>
+    <p>Desarrollamos soluciones digitales que automatizan tareas, conectan equipos y optimizan procesos.</p>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:40px;">
       <div class="card-proyecto">
-        <h3>🌐 Sitios que funcionan</h3>
-        <p>Webs rápidas, estéticas y útiles. Nada de adornos innecesarios: solo lo que genera valor.</p>
+        <h3>🌐 Sitios Web Eficientes</h3>
+        <p>Desarrollo de sitios rápidos, modernos y con diseño profesional.</p>
       </div>
       <div class="card-proyecto">
         <h3>⚙️ Automatizaciones</h3>
-        <p>Conectamos tus flujos de trabajo con herramientas que ahorran horas. Lo que antes tomaba un día, ahora pasa en segundos.</p>
+        <p>Flujos conectados entre sistemas: de Excel a web, de Power Apps a SharePoint.</p>
       </div>
       <div class="card-proyecto">
-        <h3>📊 Formularios inteligentes</h3>
-        <p>Recolectá datos sin dolor. Formularios que se integran con tus sistemas y muestran resultados en tiempo real.</p>
+        <h3>📊 Formularios Dinámicos</h3>
+        <p>Recolectá datos en campo y visualizá resultados en segundos.</p>
       </div>
     </div>
   </section>
 
   <section id="proyectos">
     <h2>Proyectos</h2>
-    <p>Algunos desarrollos creados por <strong>KronAR Studio</strong>.</p>
+    <p>Algunos desarrollos realizados por <strong>KronAR Studio</strong>.</p>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:40px;">
       <div class="card-proyecto">
-        <img src="https://picsum.photos/400/250?random=1" alt="Proyecto 1">
-        <p>Landing para emprendimientos</p>
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=60" alt="Dashboard técnico">
+        <p>Dashboard de monitoreo técnico</p>
       </div>
       <div class="card-proyecto">
-        <img src="https://picsum.photos/400/250?random=2" alt="Proyecto 2">
-        <p>Panel de control interactivo</p>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=60" alt="Automatización digital">
+        <p>Automatización de procesos digitales</p>
       </div>
       <div class="card-proyecto">
-        <img src="https://picsum.photos/400/250?random=3" alt="Proyecto 3">
-        <p>Automatización de reportes</p>
+        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de01f66?auto=format&fit=crop&w=800&q=60" alt="Desarrollo web">
+        <p>Plataformas web para empresas</p>
       </div>
     </div>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>¿Tenés un proyecto en mente o querés mejorar tus procesos digitales?</p>
+    <p>¿Tenés un proyecto en mente o querés optimizar tus sistemas?</p>
     <a href="https://wa.me/5493515721199" class="boton" target="_blank">📞 Escribinos por WhatsApp</a>
     <p style="margin-top:20px;">o escribinos a <a href="mailto:kronarstudio@gmail.com" style="color:#00e0ff;">kronarstudio@gmail.com</a></p>
   </section>
@@ -277,4 +271,3 @@
   </script>
 </body>
 </html>
-
