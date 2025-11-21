@@ -43,7 +43,6 @@
 
       z-index: 9999;
 
-      
       max-width: 1500px;
       margin: 0 auto;
     }
@@ -331,15 +330,32 @@
       transform: scale(1.06);
     }
 
+    /* ===== LÍNEA DORADA ANIMADA ===== */
+    .menu-line {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #ffd700, #fff3a0, #ffd700, transparent);
+      background-size: 300% 100%;
+      animation: goldMove 4s linear infinite;
+      z-index: 9990;
+      opacity: 0.7;
+    }
+
+    @keyframes goldMove {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
   </style>
 </head>
 
 <body>
 
-  
   <div class="circuit-bg" id="circuitContainer"></div>
 
-  
   <header>
     <div class="logo">KronAR Studio</div>
     <div class="hamburguesa" onclick="toggleMenu()">☰</div>
@@ -353,6 +369,8 @@
     </nav>
   </header>
 
+  <div class="menu-line"></div>
+
   <!-- BOTÓN WHATSAPP -->
   <a class="wsp-float"
      href="https://wa.me/5493515721199"
@@ -363,6 +381,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
          style="width:38px;">
   </a>
+
 
   
   <section id="inicio" class="hero">
